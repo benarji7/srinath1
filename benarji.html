@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover beautiful images with TerraSnap.">
+    <title>TerraSnap | Discover the Visual World</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header" id="site-header">
+        <a href="#" class="brand" aria-label="TerraSnap home">
+            <span class="brand-icon">◈</span>
+            <span>Terra<span class="brand-accent">Snap</span></span>
+        </a>
+
+        <p class="header-note">A little inspiration, one search away.</p>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <p class="eyebrow">YOUR NEXT DISCOVERY STARTS HERE</p>
+
+            <h1 id="hero-title">
+                See the world<br>
+                <span>from a new angle.</span>
+            </h1>
+
+            <p class="hero-description">
+                Explore the beauty of nature, architecture, people,
+                and everything in between.
+            </p>
+
+            <form id="search-form" class="search-form">
+                <label for="search-input" class="visually-hidden">
+                    Search for images
+                </label>
+
+                <span class="search-icon" aria-hidden="true">⌕</span>
+
+                <input
+                    type="search"
+                    id="search-input"
+                    name="query"
+                    placeholder="Try mountains, wildlife, architecture..."
+                    autocomplete="off"
+                >
+
+                <button type="submit" id="search-button">
+                    Search <span aria-hidden="true">↗</span>
+                </button>
+            </form>
+
+            <div class="quick-picks">
+                <span class="quick-picks-label">GET INSPIRED</span>
+                <button type="button" class="chip">Nature</button>
+                <button type="button" class="chip">Wildlife</button>
+                <button type="button" class="chip">Architecture</button>
+                <button type="button" class="chip">Travel</button>
+            </div>
+        </section>
+
+        <section class="results-section" aria-labelledby="results-heading">
+            <div class="results-heading-row">
+                <div>
+                    <p class="section-kicker">YOUR VISUAL EXPLORATION</p>
+                    <h2 id="results-heading">Discover something new</h2>
+                </div>
+
+                <span id="result-count" class="result-count">
+                    Results will appear here
+                </span>
+            </div>
+
+            <div id="results" class="results-grid"></div>
+
+            <div id="empty-state" class="empty-state">
+                <div class="empty-art" aria-hidden="true">
+                    <span>✳</span>
+                </div>
+                <h3>Your canvas is waiting.</h3>
+                <p>
+                    Enter a topic above and your image discoveries
+                    will have a place to land.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>TerraSnap © 2026</p>
+        <p>Made for the curious.</p>
+    </footer>
+
+    <script src="ben.js"></script>
+</body>
+</html>
